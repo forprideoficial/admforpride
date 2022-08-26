@@ -45,9 +45,9 @@ function PaymentsNumbers() {
                 <h3>Meta do mês</h3>
                 <h3>R$ {goal}</h3>
             </div>
-            <div className={result < goal ? "text4" : "text3" }>
+            <div className={result < goal || payments === 0 ? "text4" : "text3" }>
                 <h3>Resultados</h3>
-                <h3>{result < goal ? `- R$ ${result}` : `+ R$ ${result}` }</h3>
+                <h3>{result < goal || payments === 0 ? `- R$ ${result}` : `+ R$ ${result}` }</h3>
             </div>
 
             <h5>A meta é definida com 1/3 do total de contas, multiplicadas pelo valor mínimo de R$ 9,90</h5>
