@@ -1,0 +1,96 @@
+.feed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.feed .feed-posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding:60px 0px;
+}
+
+.feed .feed-posts .postIndividual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    background-color:#000;
+    border-radius: 6px;
+    color: aliceblue;
+    margin: 10px 0;
+}
+
+.feed .feed-posts .postIndividual .buttons {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.feed .feed-posts .postIndividual .buttons button {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: red;
+    padding:10px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border:none;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.feed .feed-posts .postIndividual .media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+}
+.feed .feed-posts .postIndividual .media .postText{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 300px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.feed .feed-posts .postIndividual .media .image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.feed .feed-posts .postIndividual .media .image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.feed .feed-posts .postIndividual .media .movie {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.feed .feed-posts .postIndividual .media .movie video {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+

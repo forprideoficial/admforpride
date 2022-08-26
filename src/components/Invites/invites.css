@@ -1,0 +1,150 @@
+.invitesList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+.invitesList  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.invitesList  .search input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--Black);
+    width: 70%;
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+}
+.invitesList  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.invitesList  .buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--Primary);
+    border-radius: 6px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--White);
+    margin: 10px;
+}
+
+
+.invitesList .invitListAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+.invitesList .invitListAll button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--Primary);
+    border-radius: 6px;
+    padding:10px;
+    border: none;
+    background-color: var(--White);
+    width: 50%;
+    margin: 30px;
+}
+.invitesList .invitListAll .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--Primary);
+    border-radius: 50%;
+    font-size: 20px;
+    padding:5px;
+    border: none;
+    background-color: var(--White);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.invitesList .invitListAll .top  svg {
+    font-size: 24px;
+}
+.invitesList .invitListAll .invitesUnic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--Primary);
+    color: var(--White);
+    border-radius: 6px;
+}
+.invitesList .invitListAll .invitesUnic .codes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.invitesList .invitListAll .invitesUnic .codes h5{
+    margin: 3px;
+}
+.invitesList .invitListAll .invitesUnic .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+}
+.invitesList .invitListAll .invitesUnic .buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: red;
+    color: var(--White);
+    border-radius: 6px;
+    border:none;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin: 5px;
+}
+.invitesList .invitListAll .invitesUnic .buttons .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: blue;
+    color: var(--White);
+    border-radius: 6px;
+    border:none;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin: 5px;
+}
