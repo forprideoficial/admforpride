@@ -148,12 +148,10 @@ function AuthProvider({children}) {
     // }
 
 
-    async function updateAccount(id, país, username, role, type, email, phone, online, patron, nickname, avatar,
-        cover, relationship, city, uf, cep, latitude, longitude, recommendation, status) {
-        const data = {país, username, role, type, email, phone, online, patron, nickname, avatar,
-            cover, relationship, city, uf, cep, latitude, longitude, recommendation, status}
+    async function updateAccount(id, email, status) {
+        const data = {status}
             console.log(data)
-    await   api.patch(`/accounts/${id}`, data).then(async res => {
+    await   api.patch(`/accounts/updatestatus/${id}`, data).then(async res => {
         toast.success("Conta Aprovada")
         emailAccountAproved(email)
     }).catch(error => {
