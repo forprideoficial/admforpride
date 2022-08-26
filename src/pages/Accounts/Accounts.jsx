@@ -52,7 +52,7 @@ function Accounts() {
                                     <h4>Nickname: {account.nickname}</h4>
                                     <h5>Username: {account.username}</h5>
                                     <h5>Email: {account.email}</h5>
-                                    <h5>Tipo de conta: {account.type}</h5>
+                                    <h5>Tipo de conta: {account.sex}</h5>
                                 </div>
                                 <div className="text">
                                     <h4>Cidade: {account.city}</h4>
