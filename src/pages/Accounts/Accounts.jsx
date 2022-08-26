@@ -7,7 +7,6 @@ import { useState } from "react";
 import api from "../../services/api";
 
 function Accounts() {
-    const [select, setSelect] = useState("Complete")
     const {deleteAccount, updateAccount} = useContext(AuthContext);
     const {data} = useFetch(`/accounts/search/pending`);
 
