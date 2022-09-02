@@ -5,7 +5,7 @@ import { AuthContext } from '../../contexts/Auth';
 
 function SignIn() {
     useEffect(() => {
-        if(localStorage.getItem("foursome") !== null) {
+        if(localStorage.getItem("forpride") !== null) {
             window.open("/dashboard", "_self")
         }
     }, [])
