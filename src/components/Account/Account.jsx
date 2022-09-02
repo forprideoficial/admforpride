@@ -3,7 +3,7 @@ import api from "../../services/api";
 import { FeedComponents } from "../FeedComponents/FeedComponents";
 import {IoPeopleOutline, IoPersonOutline, IoLocationOutline } from 'react-icons/io5'
 import "./account.css";
-function Account({id, role, status, avatar, cover, type, username, nickname, city, uf, país, link}){
+function Account({id, role, status, avatar, cover, sex, sexualOption, username, nickname, city, uf, país, link}){
     const [informations, setInformations] = useState([])
 
     useEffect(() => {
@@ -35,7 +35,7 @@ function Account({id, role, status, avatar, cover, type, username, nickname, cit
                 <img src={avatar === "" || avatar === undefined || avatar === null ? informations.avatar: avatar} alt="" />
             </div>
             <h2>{nickname === "" || nickname === undefined || nickname === null ? informations.nickname: nickname}</h2>
-            <h4>{type === "Casal" || type === "trisal" ? <IoPeopleOutline /> : <IoPersonOutline />} {username} - {type}</h4>
+            <h4><IoPersonOutline /> {username} - {sex} - {sexualOption}</h4>
             <h5>{role} - {status === "lifetime" ? "Vitalício" : status}</h5>
             <br />
             <h3><IoLocationOutline />{city === "" || city === undefined || city === null ? informations.city: city} - {city === "" || city === undefined || city === null ? informations.uf: uf} - {país === "" || país === undefined || país === null ? informations.país: país}</h3>

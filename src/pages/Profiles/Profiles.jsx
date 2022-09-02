@@ -11,7 +11,8 @@ const [role, setRole ] = useState("")
 const [status, setStatus ] = useState("")
 const [avatar, setAvatar] = useState("")
 const [cover, setCover] = useState("")
-const [type, setType] = useState("")
+const [sex, setSex] = useState("")
+const [sexualOption, setSexualOption] = useState("")
 const [username, setUsername] = useState("")
 const [nickname, setNickname] = useState("")
 const [city, setCity] = useState("")
@@ -34,15 +35,16 @@ const SearchUsers = filterAccounts?.filter((informations) => informations.id.inc
                                                 || informations.email.includes(search)
                                                 || informations.username.includes(search))
 
-function handleInfos(id, role, status, avatar, cover, type, username, nickname, city, uf, país){
-    console.log({id, role, status, avatar, cover, type, username, nickname, city, uf, país});
+function handleInfos(id, role, status, avatar, cover, sex, sexualOption,username, nickname, city, uf, país){
+    console.log({id, role, status, avatar, cover, sex,sexualOption, username, nickname, city, uf, país});
 
     setId(id);
     setRole(role);
     setStatus(status);
     setAvatar(avatar);
     setCover(cover);
-    setType(type);
+    setSex(sex);
+    setSexualOption(sexualOption);
     setUsername(username);
     setNickname(nickname);
     setCity(city);
@@ -67,7 +69,7 @@ function handleInfos(id, role, status, avatar, cover, type, username, nickname, 
                             <h4><b>{groups.email}</b></h4>
                             <div className="buttons">
                                 <button onClick={() =>
-                                    handleInfos(groups.id, groups.role, groups.status, groups.avatar, groups.cover, groups.type, groups.username, groups.nickname, groups.city, groups.uf, groups.país)}
+                                    handleInfos(groups.id, groups.role, groups.status, groups.avatar, groups.cover, groups.sex, groups.sexualOption, groups.username, groups.nickname, groups.city, groups.uf, groups.país)}
                                     >Abrir</button>
                                 <button className="btn">Deletar</button>
                             </div>
@@ -83,7 +85,7 @@ function handleInfos(id, role, status, avatar, cover, type, username, nickname, 
             </div>
             <div className="profileInformations">
 
-                <Account id={id} role={role} status={status} avatar={avatar} cover={cover} type={type} username={username} nickname={nickname} city={city} uf={uf} país={país} link={`/posts/filter/accounts/${id}`}/>
+                <Account id={id} role={role} status={status} avatar={avatar} cover={cover} sex={sex} sexualOption={sexualOption} username={username} nickname={nickname} city={city} uf={uf} país={país} link={`/posts/filter/accounts/${id}`}/>
                  </div>
             </div>
         </div>
