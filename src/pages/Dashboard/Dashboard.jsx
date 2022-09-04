@@ -21,6 +21,20 @@ function Dashboard() {
     const user = JSON.parse(local);
 
     const [online, setOnline] = useState([])
+    const [login, setLogin] = useState([])
+
+    useEffect(() => {
+        async function loadUsersLoginDateActual() {
+            await api.get("/datereadlogin").then((result) => {
+                setLogin(result.data)
+            }).catch((error) => {
+                console.log(error);
+            })
+        }
+
+        loadUsersLoginDateActual()
+    })
+
     useEffect(() => {
         async function onlineUsers() {
             const res = await api.get("online");
@@ -96,7 +110,7 @@ function Dashboard() {
                 <Navbar />
                 <div className="mainDashboard">
                 <div className="title">
-                    <h3>Olá {user.username}, seja bem-vindo de volta</h3>
+                  <h3>Olá {user.username}, seja bem-vindo de volta <br /> {filterLogin.length} usuários logaram hoje</h3>
                 </div>
                 <div className="blocks">
                  <Accounts />    
