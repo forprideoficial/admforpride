@@ -104,6 +104,10 @@ function Dashboard() {
          })
     }
 
+    const filterLogin = login.filter((login) => new Date(login.created_at).getDate() === new Date().getDate())
+
+    console.log(filterLogin);
+
     return (
         <div className="content">
             <div className="dashboard">
